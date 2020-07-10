@@ -1,5 +1,5 @@
 # Traffic Sign Classifier using TensorFlow
-> Made by Parth Mistry
+> By Parth Mistry
 
 * This classifier will help to classify 43 different Road Signs.   
 * In this project, I used Python and Tensorflow to classify the signs.  
