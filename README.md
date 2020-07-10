@@ -1,5 +1,5 @@
 # Traffic Sign Classifier using TensorFlow
->by Parth Mistry
+> Made by Parth Mistry
 
 * This classifier will help to classify 43 different Road Signs.   
 * In this project, I used Python and Tensorflow to classify the signs.  
@@ -9,7 +9,7 @@
 **Python Version:** 3.7  
 **Packages:** numpy, pandas, matplotlib, seaborn, open-cv, keras, tensorflow, pickle  
 **Tensorflow Version:** 2.2.0 (GPU Support)   
-**Dataset:** [German Traffic Sign](https://bitbucket.org/jadslim/german-traffic-signs/src/master/)
+**Dataset:** [German Traffic Signs](https://bitbucket.org/jadslim/german-traffic-signs/src/master/)
 
 ---
 ## 1. Load the Data
@@ -25,10 +25,10 @@ We will use Python ```pickle``` to load the data
 The pickled data is a dictionary with 4 key/value pairs:  
 * ```features``` is a 4D array containing raw pixel data of traffic sign images, (num examples, width, height, channels).  
 * ```labels``` is a 1D array containing the label of the traffic sign. The file signnames.csv contains id-> mapping for each id.
-* ```sizes``` is a list containing tuples, (width and height) representing the original width and height the images.
-* ```coords``` is a list containing tuples,(x1,y1,x2,y2) representing coordinates of a bounding box around the sign in the image  
+* ```sizes``` is a list containing tuples, (width and height) representing the original width and height the images. 
 
 **Firstly we will use ```numpy``` to check the images specifications.**  
+
 There are 34,799 images in the training set, 4,410 in the validation set and 12630 in the test set.
 Image Data Shape = (32,32,3).  
 Number of classes are = 43  
@@ -64,7 +64,7 @@ We will use the following techniques to preprocess the images:
 **Flatten** : Flatten the output shape of the final pooling layer such that it's 1D instead of 3D.  
 **Layer 3** *Fully Connected* : This should have 256 outputs  
 **Dropout** : This should have 256 outputs  
-**Layer 4** *Fully Connected)* : This should have 43 outputs  
+**Layer 4** *Fully Connected* : This should have 43 outputs  
 
 ### Notes:
 * We specify 0.0001 the learning rate, which tells the neural network how quickly to update weights.
